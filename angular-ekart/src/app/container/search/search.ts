@@ -12,10 +12,12 @@ export class Search {
   searchText:string='';
   @Output()
   searchTextChange: EventEmitter<string>=new EventEmitter<string>();
-  onSearchTextChange(){
+  //onSearchTextChange(){
+  //  this.searchTextChange.emit(this.searchText);
+  //}
+  searchUpdateText(inputEL:HTMLInputElement){
+    //console.log(inputEL.value);
+    this.searchText=inputEL.value;
     this.searchTextChange.emit(this.searchText);
-  }
-  searchUpdateText(event:any){
-    this.searchText=event.target.value;
   }
 }
