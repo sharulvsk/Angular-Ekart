@@ -1,0 +1,16 @@
+/* TOP BAR */
+.ekart--top--bar{
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.ekart--top--bar a{
+    text-decoration:none;
+    color:#bdbdbd;
+    margin-left:18px;
+    transition:0.3s;
+}
+
+.ekart--top--bar a:hover{
+    color:#ffffff;
+}

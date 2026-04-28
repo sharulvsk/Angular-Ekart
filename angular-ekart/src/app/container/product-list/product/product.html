@@ -1,0 +1,27 @@
+<div class="ekart--product--item">
+    <div class="ekart--product--image">
+        <img class="ekart--product--image" [src]="product.imageURL"/>
+        <div class="ekart--discount--badge" *ngIf="product.discountPrice">
+            {{(100-((product.discountPrice/product.price)*100)).toFixed(0)}}% OFF
+        </div>
+    </div>
+    <div class="ekart--product--name">
+        {{product.name}}
+    </div>
+    <div class="ekart--product--category">
+        {{product.brand}}-{{product.gender}}-{{product.category}}
+    </div>
+    <div class="ekart--product--price">
+        ${{product.price}}
+    </div>
+    <div class="ekart--product--colors">
+        <div class="ekart--product--color" *ngFor="let c of product.color">
+            {{c}}
+        </div>
+    </div>
+    <button (click)="addToCart(product)" class="ekart--addtocart--button">Add to cart</button>
+    <div class="ekart--product--inStock" [ngStyle]="{fontWeight:'bold', color:product.is_in_inventory?'purple':'violet'}">{{product.is_in_inventory?'Available':'Out of stock'}}</div>
+    <div class="ekart--product--description">
+        {{product.description}}
+    </div>
+</div>

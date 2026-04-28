@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+.ekart--header{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:palevioletred;
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid palevioletred;
+}
+
+.ekart--logo{
+    font-size:26px;
+    font-weight:600;
+    font-family: 'Concert One', cursive;
+    letter-spacing:2px;
+    color:black;
+    cursor:pointer;
+}
+
+/* NAV CONTAINER */
+.ekart--header--nav{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+
+/* BOTTOM BAR */
+.ekart--bottom--bar{
+    display:flex;
+    align-items:center;
+}
+
+/* SCROLLBAR STYLE */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f0f0f;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#333;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
