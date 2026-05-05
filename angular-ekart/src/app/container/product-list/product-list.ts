@@ -9,6 +9,7 @@ import { Filter } from './filter/filter';
   styleUrl: './product-list.css',
 })
 export class ProductList {
+  selectedProducts;
   products=[
   {
   id: 3,
